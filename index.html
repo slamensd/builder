@@ -1,153 +1,126 @@
-import React from "react";
-
-function LandingPage() {
-  return (
-    <main className="bg-white flex flex-col">
-      <nav className="self-center flex w-full max-w-[1277px] flex-col max-md:max-w-full">
-        <ul className="self-center w-full px-5 max-md:max-w-full">
-          <li className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-            <a href="#" className="flex flex-col items-stretch w-[19%] max-md:w-full max-md:ml-0">
-              <div className="flex flex-col mt-6 max-md:mt-8">
-                <a href="#" className="flex w-[244px] max-w-full items-start justify-between gap-5 max-md:justify-center">
-                  <span className="text-slate-500 text-sm leading-[171.43%] self-stretch">Home</span>
-                  <span className="text-slate-500 text-sm leading-[171.43%] self-stretch">About</span>
-                  <span className="text-slate-500 text-sm leading-[171.43%] self-stretch">Contact</span>
-                </a>
-                <a href="#" className="bg-indigo-950 flex w-[189px] max-w-full grow flex-col mt-[653px] px-5 py-3 rounded-sm max-md:mt-52">
-                  <span className="text-white text-center text-base font-medium leading-[162.5%] self-center w-full -mt-px mb-px">Purchase UI Kit</span>
-                </a>
-              </div>
-            </a>
-            <div className="flex flex-col items-stretch w-[81%] ml-5 max-md:w-full max-md:ml-0">
-              <div className="flex-col overflow-hidden relative flex min-h-[1112px] grow pr-5 pt-5 pb-10 max-md:max-w-full max-md:mt-2">
-                <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="absolute z-[-1] h-full w-full object-cover object-center inset-0" />
-                <div className="relative self-center flex w-full max-w-[1112px] flex-col mb-64 max-md:max-w-full">
-                  <div className="flex w-[594px] max-w-full items-start justify-between gap-5 max-md:flex-wrap">
-                    <h1 className="text-indigo-900 text-2xl font-black leading-[146.15%]">Landing</h1>
-                    <a href="#" className="bg-indigo-950 flex w-40 max-w-full flex-col px-5 py-2 rounded-sm">
-                      <span className="text-white text-center text-xs font-medium leading-[150%] self-center w-full -mb-px">Buy Now</span>
-                    </a>
-                  </div>
-                  <div className="flex w-[539px] max-w-full flex-col mt-64 max-md:mt-52">
-                    <h2 className="text-slate-900 text-5xl font-medium leading-[132%] tracking-wider self-stretch w-full max-md:max-w-full max-md:text-4xl">Introduce Your Product Quickly & Effectively</h2>
-                    <p className="text-slate-500 text-lg leading-[166.67%] self-stretch w-full mt-5 max-md:max-w-full">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                  </div>
-                  <a href="#" className="border-[color:var(--colour-main-blue-900,#091133)] flex w-[189px] max-w-full grow flex-col ml-56 mt-16 px-5 py-3.5 rounded-sm border-2 border-solid max-md:ml-2.5">
-                    <span className="text-slate-900 text-center text-base font-medium leading-[162.5%] self-center w-full -mb-0.5">Learn More</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <section className="self-center w-full max-w-[1110px] mt-28 px-5 max-md:max-w-full">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-          <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-            <div className="flex flex-col my-auto max-md:max-w-full max-md:mt-12">
-              <h2 className="text-slate-900 text-4xl font-medium leading-[133.33%] w-[540px] max-w-full">Light, Fast & Powerful</h2>
-              <p className="text-slate-500 text-base leading-[162.5%] w-[540px] max-w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <div className="w-[540px] max-w-full mt-20">
-                <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                  <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-                    <div className="flex grow flex-col max-md:mt-8">
-                      <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-[7.08] object-cover object-center w-full items-center overflow-hidden" />
-                      <h3 className="text-slate-900 text-base font-medium leading-[162.5%] w-[255px] max-w-full mt-2.5">Title Goes Here</h3>
-                      <p className="text-gray-500 text-xs leading-[150%] w-[255px] max-w-full mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
-                    <div className="flex grow flex-col max-md:mt-8">
-                      <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-[7.08] object-cover object-center w-full items-center overflow-hidden" />
-                      <h3 className="text-slate-900 text-base font-medium leading-[162.5%] w-[255px] max-w-full mt-2.5">Title Goes Here</h3>
-                      <p className="text-gray-500 text-xs leading-[150%] w-[255px] max-w-full mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-[1.03] object-cover object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-8" />
+<div class="bg-white flex flex-col">
+  <header>
+    <nav>
+      <ul class="flex flex-col mt-6 max-md:mt-8">
+        <li>
+          <a href="#" class="text-slate-500 text-sm leading-[171.43%]">Home</a>
+        </li>
+        <li>
+          <a href="#" class="text-slate-500 text-sm leading-[171.43%]">About</a>
+        </li>
+        <li>
+          <a href="#" class="text-slate-500 text-sm leading-[171.43%]">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bg-indigo-950 flex w-[189px] max-w-full grow flex-col mt-[653px] px-5 py-3 rounded-sm max-md:mt-52">
+      <div class="text-white text-center text-base font-medium leading-[162.5%] self-center w-full -mt-px mb-px">Purchase UI Kit</div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/66cda35a-58e1-48fc-9402-91082a782344?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="absolute z-[-1] h-full w-full object-cover object-center inset-0" />
+      <div class="relative self-center flex w-full max-w-[1112px] flex-col mb-64 max-md:max-w-full">
+        <div class="flex w-[594px] max-w-full items-start justify-between gap-5 max-md:flex-wrap">
+          <h1 class="text-indigo-900 text-2xl font-black leading-[146.15%]">Landing</h1>
+          <div class="bg-indigo-950 flex w-40 max-w-full flex-col px-5 py-2 rounded-sm">
+            <div class="text-white text-center text-xs font-medium leading-[150%] self-center w-full -mb-px">Buy Now</div>
           </div>
         </div>
-      </section>
-      <section className="self-center w-full max-w-[1080px] mt-56 px-5 max-md:max-w-full max-md:mt-52">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-          <div className="flex flex-col items-stretch w-[55%] max-md:w-full max-md:ml-0">
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-[1.52] object-cover object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-12" />
+        <div class="flex w-[539px] max-w-full flex-col mt-64 max-md:mt-52">
+          <h2 class="text-slate-900 text-5xl font-medium leading-[132%] tracking-wider self-stretch w-full max-md:max-w-full max-md:text-4xl">Introduce Your Product Quickly & Effectively</h2>
+          <p class="text-slate-500 text-lg leading-[166.67%] self-stretch w-full mt-5 max-md:max-w-full">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+        <div class="border-[color:var(--colour-main-blue-900,#091133)] flex w-[189px] max-w-full grow flex-col ml-56 mt-16 px-5 py-3.5 rounded-sm border-2 border-solid max-md:ml-2.5">
+          <div class="text-slate-900 text-center text-base font-medium leading-[162.5%] self-center w-full -mb-0.5">Learn More</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
+        <div class="flex flex-col my-auto max-md:max-w-full max-md:mt-12">
+          <h2 class="text-slate-900 text-4xl font-medium leading-[133.33%] w-[540px] max-w-full">Light, Fast & Powerful</h2>
+          <p class="text-slate-500 text-base leading-[162.5%] w-[540px] max-w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <div class="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
+            <div class="flex grow flex-col max-md:mt-8">
+              <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/eaf217da-d1c8-45c6-a06a-e8c5a6ae0f8c?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-[7.08] object-cover object-center w-full items-center overflow-hidden" />
+              <h3 class="text-slate-900 text-base font-medium leading-[162.5%] w-[255px] max-w-full mt-2.5">Title Goes Here</h3>
+              <p class="text-gray-500 text-xs leading-[150%] w-[255px] max-w-full mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            </div>
           </div>
-          <div className="flex flex-col items-stretch w-[45%] ml-5 max-md:w-full max-md:ml-0">
-            <div className="flex flex-col my-auto max-md:max-w-full max-md:mt-12">
-              <h2 className="text-slate-900 text-4xl font-medium leading-[133.33%] w-[445px] max-w-full">Light, Fast & Powerful</h2>
-              <p className="text-slate-500 text-base leading-[162.5%] w-[445px] max-w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <div class="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
+            <div class="flex grow flex-col max-md:mt-8">
+              <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/dd419821-be3b-49d7-888a-a1bbfc57ad01?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-[7.08] object-cover object-center w-full items-center overflow-hidden" />
+              <h3 class="text-slate-900 text-base font-medium leading-[162.5%] w-[255px] max-w-full mt-2.5">Title Goes Here</h3>
+              <p class="text-gray-500 text-xs leading-[150%] w-[255px] max-w-full mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
             </div>
           </div>
         </div>
-      </section>
-      <section className="self-center w-full max-w-[1110px] mt-56 px-5 max-md:max-w-full max-md:mt-52">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-          <div className="flex flex-col items-stretch w-[56%] max-md:w-full max-md:ml-0">
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-[1.4] object-cover object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-12" />
-          </div>
-          <div className="flex flex-col items-stretch w-[44%] ml-5 max-md:w-full max-md:ml-0">
-            <div className="flex flex-col my-auto max-md:max-w-full max-md:mt-12">
-              <h2 className="text-slate-900 text-4xl font-medium leading-[133.33%] w-[445px] max-w-full">Light, Fast & Powerful</h2>
-              <p className="text-slate-500 text-base leading-[162.5%] w-[445px] max-w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </div>
+      </div>
+      <div class="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
+        <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/4d7321c9-2406-479a-bb98-41bac2b4d7a1?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-[1.03] object-cover-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-8" />
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col items-stretch w-[55%] max-md:w-full max-md:ml-0">
+        <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/952968a5-0239-4273-a55e-3c5a51c054b3?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-[1.52] object-cover object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-12" />
+      </div>
+      <div class="flex flex-col items-stretch w-[45%] ml-5 max-md:w-full max-md:ml-0">
+        <div class="flex flex-col my-auto max-md:max-w-full max-md:mt-12">
+          <h2 class="text-slate-900 text-4xl font-medium leading-[133.33%] w-[445px] max-w-full">Light, Fast & Powerful</h2>
+          <p class="text-slate-500 text-base leading-[162.5%] w-[445px] max-w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col items-stretch w-[56%] max-md:w-full max-md:ml-0">
+        <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/609a1ca5-9bbe-4ee6-a84a-c065e8d59a3e?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-[1.4] object-cover object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-12" />
+      </div>
+      <div class="flex flex-col itemsretch w-[44%] ml-5 max-md:w-full max-md:ml-0">
+        <div class="flex flex-col my-auto max-md:max-w-full max-md:mt-12">
+          <h2 class="text-slate-900 text-4xl font-medium leading-[133.33%] w-[445px] max-w-full">Light, Fast & Powerful</h2>
+          <p class="text-slate-500 text-base leading-[162.5%] w-[445px] max-w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <div class="bg-indigo-950 flex w-[150px] max-w-full grow flex-col mt-9 px-5 py-3 rounded-sm">
+            <div class="text-white text-center text-sm font-medium leading-[171.43%] self-center w-full">Purchase Now</div>
           </div>
         </div>
-      </section>
-      <section className="self-center w-full max-w-[1062px] mt-60 px-5 max-md:max-w-full max-md:mt-52">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-          <div className="flex flex-col items-stretch w-[54%] max-md:w-full max-md:ml-0">
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-[1.43] object-cover object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-12" />
-          </div>
-          <div className="flex flex-col items-stretch w-[46%] ml-5 max-md:w-full max-md:ml-0">
-            <div className="flex flex-col my-auto max-md:max-w-full max-md:mt-12">
-              <h2 className="text-slate-900 text-4xl font-medium leading-[133.33%] w-[445px] max-w-full">Light, Fast & Powerful</h2>
-              <p className="text-slate-500 text-base leading-[162.5%] w-[445px] max-w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus <br /> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-              <a href="#" className="bg-indigo-950 flex w-[150px] max-w-full grow flex-col mt-9 px-5 py-3 rounded-sm">
-                <span className="text-white text-center text-sm font-medium leading-[171.43%] self-center w-full">Purchase Now</span>
-              </a>
-            </div>
-          </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex w-[580px] max-w-full flex-col mt-96 px-5 max-md:mt-52">
+        <h2 class="text-slate-900 text-center text-4xl font-medium leading-[133.33%] self-center w-[600px] max-w-full">A Price To Suit Everyone</h2>
+        <p class="text-slate-500 text-center text-base leading-[162.5%] self-stretch w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
+        <h3 class="text-blue-950 text-center text-5xl font-medium leading-[132%] tracking-wider self-center w-[350px] max-w-full mt-9 max-md:text-4xl">$40</h3>
+        <div class="text-indigo-900 text-center text-base leading-[162.5%] self-center w-[350px] max-w-full mt-2">UI Design Kit</div>
+        <p class="text-gray-500 text-center text-sm leading-[171.43%] self-center w-[350px] max-w-full mt-16">See, One price. Simple.</p>
+        <div class="bg-indigo-950 self-center flex w-[189px] max-w-full grow flex-col mt-3.5 px-5 py-3 rounded-sm">
+          <div class="text-white text-center text-sm font-medium leading-[171.43%] self-center w-full -mt-px">Purchase Now</div>
         </div>
-      </section>
-      <section className="self-center flex w-[580px] max-w-full flex-col mt-96 px-5 max-md:mt-52">
-        <h2 className="text-slate-900 text-center text-4xl font-medium leading-[133.33%] self-center w-[600px] max-w-full">A Price To Suit Everyone</h2>
-        <p className="text-slate-500 text-center text-base leading-[162.5%] self-stretch w-full mt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus</p>
-        <h3 className="text-blue-950 text-center text-5xl font-medium leading-[132%] tracking-wider self-center w-[350px] max-w-full mt-9 max-md:text-4xl">$40</h3>
-        <p className="text-indigo-900 text-center text-base leading-[162.5%] self-center w-[350px] max-w-full mt-2">UI Design Kit</p>
-        <p className="text-gray-500 text-center text-sm leading-[171.43%] self-center w-[350px] max-w-full mt-16">See, One price. Simple.</p>
-        <a href="#" className="bg-indigo-950 self-center flex w-[189px] max-w-full grow flex-col mt-3.5 px-5 py-3 rounded-sm">
-          <span className="text-white text-center text-sm font-medium leading-[171.43%] self-center w-full -mt-px">Purchase Now</span>
-        </a>
-      </section>
-      <footer className="bg-violet-100 self-stretch flex w-full flex-col mt-44 px-5 py-10 max-md:max-w-full">
-        <div className="self-center flex w-full max-w-[1110px] items-start justify-between gap-5 mt-7 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
-          <span className="text-gray-400 text-sm font-medium leading-[171.43%] self-center w-[143px] my-auto">©2023 Yourcompany</span>
-          <h2 className="text-indigo-900 text-2xl font-black leading-[146.15%]">Landing</h2>
-          <a href="#" className="text-white text-center text-xs font-medium leading-[150%] self-stretch w-[109px] bg-indigo-950 max-w-full pt-2 pb-2.5 px-4 rounded-sm">Purchase now</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="bg-violet-100 self-stretch flex w-full flex-col mt-44 px-5 py-10 max-md:max-w-full">
+      <div class="self-center flex w-full max-w-[1110px] items-start justify-between gap-5 mt-7 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
+        <div class="text-gray-400 text-sm font-medium leading-[171.43%] self-center w-[143px] my-auto">©2023 Yourcompany</div>
+        <div class="text-indigo-900 text-2xl font-black leading-[146.15%]">Landing</div>
+        <div class="text-white text-center text-xs font-medium leading-[150%] self-stretch w-[109px] bg-indigo-950 max-w-full pt-2 pb-2.5 px-4 rounded-sm">Purchase now</div>
+      </div>
+      <div class="bg-neutral-300 self-center flex w-[1110px] h-px flex-col mt-11 max-md:max-w-full"></div>
+      <div class="self-center flex w-full max-w-[1110px]-start justify-between gap-5 mt-6 -mb-0.5 max-md:max-w-full max-md:flex-wrap">
+        <div class="self-center flex w-[244px] max-w-full items-start justify-between gap-5 my-auto max-md:justify-center">
+          <a href="#" class="text-slate-400 text-sm leading-[171.43%] self-stretch">Home</a>
+          <a href="#" class="text-slate-400 text-sm leading-[171.43%] self-stretch">About</a>
+          <a href="#" class="text-slate-400 text-sm leading-[171.43%] self-stretch">Contact</a>
         </div>
-        <div className="bg-neutral-300 self-center flex w-[1110px] h-px flex-col mt-11 max-md:max-w-full" />
-        <div className="self-center flex w-full max-w-[1110px] items-start justify-between gap-5 mt-6 -mb-0.5 max-md:max-w-full max-md:flex-wrap">
-          <div className="self-center flex w-[244px] max-w-full items-start justify-between gap-5 my-auto max-md:justify-center">
-            <span className="text-slate-400 text-sm leading-[171.43%] self-stretch">Home</span>
-            <span className="text-slate-400 text-sm leading-[171.43%] self-stretch">About</span>
-            <span className="text-slate-400 text-sm leading-[171.43%] self-stretch">Contact</span>
-          </div>
-          <div className="self-stretch flex w-[200px] max-w-full items-start justify-between gap-5 max-md:justify-center">
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
-            <img loading="lazy" srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/31fd7ef5-9faf-4d18-8a5b-e5082e4d0e90?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/31fd7ef5-9faf-4d18-8a5b-e5082e4d0e90?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/31fd7ef5-9faf-4d18-8a5b-e5082e4d0e90?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/31fd7ef5-9faf-4d18-8a5b-e5082e4d0e90?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/31fd7ef5-9faf-4d18-8a5b-e5082e4d0e90?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/31fd7ef5-9faf-4d18-8a5b-e5082e4d0e90?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/31fd7ef5-9faf-4d18-8a5b-e5082e4d0e90?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/31fd7ef5-9faf-4d18-8a5b-e5082e4d0e90?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"className="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
-          </div>
+        <div class="self-stretch flex w-[200px] max-w-full items-start justify-between gap-5 max-md:justify-center">
+          <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f2b196d4-db45-49f0-b8c1-dbe566f6a5dc?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
+          <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/082d52c2-7b9e-47df-ac76-a4a12d9c4ee4?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
+          <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/f501dfb3-0eba-4be2-9b4f-984ab94074ac?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
+          <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/a928b921-ff88-4242-b93a-8056eac347ab?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
+          <img loading="lazy" srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d65c86e2-4a64-44f9-a003-658df0d4243f?apiKey=ecdcfcbc44ed44fdb80f878d486e4598&"class="aspect-square object-cover object-center w-4 overflow-hidden shrink-0" />
         </div>
-      </footer>
-    </main>
-  );
-}
-
-export default LandingPage;
+      </div>
+    </div>
+  </footer>
+</div>
